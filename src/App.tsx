@@ -2,16 +2,24 @@ import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Menu, X, ChevronDown, Facebook, Twitter, Linkedin, Mail } from 'lucide-react';
 
+import Home from './pages/Home';
+import Students from './pages/Students';
+import Research from './pages/Research';
+import Teaching from './pages/Teaching';
+import Publications from './pages/Publications';
+import Contact from './pages/Contact';
+import SynergisticActivities from './pages/SynergisticActivities';
+import Gallery from './pages/Gallery';
 
-// Lazy-loaded components for better performance
-const Home = lazy(() => import('./pages/Home'));
-const Students = lazy(() => import('./pages/Students'));
-const Research = lazy(() => import('./pages/Research'));
-const Teaching = lazy(() => import('./pages/Teaching'));
-const Publications = lazy(() => import('./pages/Publications'));
-const Contact = lazy(() => import('./pages/Contact'));
-const SynergisticActivities = lazy(() => import('./pages/SynergisticActivities'));
-const Gallery = lazy(() => import('./pages/Gallery'));
+// // Lazy-loaded components for better performance
+// const Home = lazy(() => import('./pages/Home'));
+// const Students = lazy(() => import('./pages/Students'));
+// const Research = lazy(() => import('./pages/Research'));
+// const Teaching = lazy(() => import('./pages/Teaching'));
+// const Publications = lazy(() => import('./pages/Publications'));
+// const Contact = lazy(() => import('./pages/Contact'));
+// const SynergisticActivities = lazy(() => import('./pages/SynergisticActivities'));
+// const Gallery = lazy(() => import('./pages/Gallery'));
 
 function App() {
   const [menuState, setMenuState] = useState({ isMenuOpen: false, isMoreOpen: false });
