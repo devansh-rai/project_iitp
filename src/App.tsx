@@ -180,7 +180,7 @@ function App() {
 
         {/* Main Content */}
         <div className="pt-16 flex-grow">
-          <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
+          {/* <Suspense fallback={<div className="text-center py-10">Loading...</div>}> */}
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/students" element={<Students />} />
@@ -191,7 +191,7 @@ function App() {
               <Route path="/synergistic-activities" element={<SynergisticActivities />} />
               <Route path="/gallery" element={<Gallery />} />
             </Routes>
-          </Suspense>
+          {/* </Suspense> */}
         </div>
 
         {/* Redesigned Footer */}
