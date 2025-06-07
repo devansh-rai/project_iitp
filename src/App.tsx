@@ -52,6 +52,44 @@ function App() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-end h-16 items-center space-x-3">
               {/* Desktop Navigation */}
+              {/* <div className="hidden md:flex md:items-center space-x-3">
+                {mainNavigation.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    onClick={handleLinkClick}
+                    className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-lg font-medium"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+                <div className="relative more-dropdown">
+                  <button
+                    onClick={() => setMenuState((prev) => ({ ...prev, isMoreOpen: !prev.isMoreOpen }))}
+                    className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-lg font-medium flex items-center"
+                    aria-expanded={menuState.isMoreOpen}
+                    aria-label="Toggle more menu"
+                  >
+                    More <ChevronDown className="ml-2 h-5 w-5" />
+                  </button>
+                  {menuState.isMoreOpen && (
+                    <div className="absolute mt-2 bg-white shadow-lg rounded-md w-48 py-2">
+                      {moreNavigation.map((item) => (
+                        <Link
+                          key={item.name}
+                          to={item.href}
+                          onClick={handleLinkClick}
+                          className="block px-4 py-2 text-gray-600 hover:text-indigo-600 hover:bg-gray-100"
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </div> */}
+
+              {/* Desktop Navigation */}
               <div className="hidden md:flex md:items-center space-x-3">
                 {mainNavigation.map((item) => (
                   <Link
@@ -88,6 +126,46 @@ function App() {
                   )}
                 </div>
               </div>
+
+              {/* Mobile Menu Toggle */}
+              <div className="md:hidden flex items-center">
+                <button
+                  onClick={() => setMenuState((prev) => ({ ...prev, isMenuOpen: !prev.isMenuOpen }))}
+                  className="text-gray-600 hover:text-indigo-600 focus:outline-none"
+                  aria-label="Toggle menu"
+                >
+                  {menuState.isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                </button>
+              </div>
+
+              {/* Mobile Menu */}
+              {menuState.isMenuOpen && (
+                <div className="md:hidden absolute top-16 left-0 w-full bg-white shadow-lg px-4 py-4 space-y-2 z-20">
+                  {mainNavigation.map((item) => (
+                    <Link
+                      key={item.name}
+                      to={item.href}
+                      onClick={handleLinkClick}
+                      className="block text-gray-600 hover:text-indigo-600 text-lg font-medium"
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                  <hr className="border-gray-200" />
+                  {moreNavigation.map((item) => (
+                    <Link
+                      key={item.name}
+                      to={item.href}
+                      onClick={handleLinkClick}
+                      className="block text-gray-600 hover:text-indigo-600 text-lg font-medium"
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+
+
             </div>
           </div>
         </nav>
