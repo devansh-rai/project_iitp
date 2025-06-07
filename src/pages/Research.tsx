@@ -180,7 +180,7 @@ function Research() {
               key={key}
               onClick={() => {
                 setActiveSection(key);
-                window.location.hash = key;
+                // window.location.hash = key;
               }}
               className={`px-4 py-2 font-semibold ${activeSection === key ? "bg-indigo-600 text-white" : "bg-gray-200 text-gray-800"} rounded`}
               aria-label={`View ${key.replace(/([A-Z])/g, ' $1').trim()}`}
