@@ -11,7 +11,7 @@ function Students() {
           name: "Ankit Kumar Kushwaha",
           year: "2021 - 2025 (expected)",
           position: "IIT Patna",
-          image: "students/Ankit.jpeg",
+          image: "images/Ankit.jpeg",
           social: {
             linkedin: "https://www.linkedin.com/in/ankit-kushwaha-62784b189/",
           },
@@ -20,7 +20,7 @@ function Students() {
           name: "Ramanand Singh",
           year: "2022 - 2026 (expected)",
           position: "IIT Patna",
-          image: "students/rama.jpg",
+          image: "images/rama.jpg",
           social: {
             linkedin: "https://www.linkedin.com/in/ramanand-s-361b761a2/",
           },
@@ -32,7 +32,7 @@ function Students() {
           year: "2024-2026",
           position: "IIT Patna",
           caption: "Trying to finish my thesis before AI takes my job.",
-          image: "students/sample.png",
+          image: "images/sample.png",
           social: {
             linkedin: "https://linkedin.com/in/sophiajohnson"
           }
@@ -44,7 +44,7 @@ function Students() {
           year: "2024-25",
           position: "IIT Patna",
           caption: "Building the future one line of code at a time.",
-          image: "students/sample.png",
+          image: "images/sample.png",
           social: {
             linkedin: "https://linkedin.com/in/danielbrown"
           }
@@ -54,7 +54,7 @@ function Students() {
           year: "2024-25",
           position: "IIT Patna",
           caption: "Building the future one line of code at a time.",
-          image: "students/sample.png",
+          image: "images/sample.png",
           social: {
             linkedin: "https://linkedin.com/in/danielbrown"
           }
@@ -64,7 +64,7 @@ function Students() {
           year: "2024-25",
           position: "IIT Patna",
           caption: "Building the future one line of code at a time.",
-          image: "students/sample.png",
+          image: "images/sample.png",
           social: {
             linkedin: "https://linkedin.com/in/danielbrown"
           }
@@ -74,7 +74,7 @@ function Students() {
           year: "2024-25",
           position: "IIT Patna",
           caption: "Dreaming in algorithms and debugging in reality.",
-          image: "students/sample.png",
+          image: "images/sample.png",
           social: {
             linkedin: "https://linkedin.com/in/oliviawilson"
           }
@@ -89,7 +89,7 @@ function Students() {
           year: "2024-25",
           position: "IIT Patna",
           caption: "Turning ideas into reality with code.",
-          image: "students/sample.png",
+          image: "images/sample.png",
           social: {
             linkedin: "https://linkedin.com/in/liammartinez"
           }
@@ -99,7 +99,7 @@ function Students() {
           year: "2022-23",
           position: "IIT Patna",
           caption: "Turning ideas into reality with code.",
-          image: "students/sample.png",
+          image: "images/sample.png",
           social: {
             linkedin: "https://linkedin.com/in/liammartinez"
           }
@@ -109,7 +109,7 @@ function Students() {
           year: "2022-23",
           position: "IIT Patna",
           caption: "Turning ideas into reality with code.",
-          image: "students/sample.png",
+          image: "images/sample.png",
           social: {
             linkedin: "https://linkedin.com/in/liammartinez"
           }
@@ -119,7 +119,7 @@ function Students() {
           year: "2021-22",
           position: "IIT Patna",
           caption: "Turning ideas into reality with code.",
-          image: "students/sample.png",
+          image: "images/sample.png",
           social: {
             linkedin: "https://linkedin.com/in/liammartinez"
           }
@@ -129,7 +129,7 @@ function Students() {
           year: "2020-21",
           position: "IIT Patna",
           caption: "Turning ideas into reality with code.",
-          image: "students/sample.png",
+          image: "images/sample.png",
           social: {
             linkedin: "https://linkedin.com/in/liammartinez"
           }
@@ -139,7 +139,7 @@ function Students() {
           year: "2018-19",
           position: "NTU Singapore",
           caption: "Turning ideas into reality with code.",
-          image: "students/chaitra.jpg",
+          image: "images/chaitra.jpg",
           social: {
             linkedin: "https://linkedin.com/in/liammartinez"
           }
@@ -149,7 +149,7 @@ function Students() {
           year: "2018-19",
           position: "NTU Singapore",
           caption: "Making sense of data, one model at a time.",
-          image: "students/aakash.jpg",
+          image: "images/aakash.jpg",
           social: {
             linkedin: "https://linkedin.com/in/emmadavis"
           }
@@ -161,7 +161,7 @@ function Students() {
            year: "2023-24",
           position: "IIT Patna",
           caption: "Passionate about AI and machine learning.",
-          image: "students/sample.png",
+          image: "images/sample.png",
           social: {
             linkedin: "https://linkedin.com/in/noahgarcia"
           }
@@ -171,7 +171,7 @@ function Students() {
            year: "2023-24",
           position: "IIT Patna",
           caption: "Passionate about AI and machine learning.",
-          image: "students/sample.png",
+          image: "images/sample.png",
           social: {
             linkedin: "https://linkedin.com/in/noahgarcia"
           }
@@ -181,7 +181,7 @@ function Students() {
            year: "2023-24",
           position: "IIT Patna",
           caption: "Passionate about AI and machine learning.",
-          image: "students/sample.png",
+          image: "images/sample.png",
           social: {
             linkedin: "https://linkedin.com/in/noahgarcia"
           }
@@ -191,7 +191,7 @@ function Students() {
            year: "2023-24",
           position: "IIT Patna",
           caption: "Passionate about AI and machine learning.",
-          image: "students/sample.png",
+          image: "images/sample.png",
           social: {
             linkedin: "https://linkedin.com/in/noahgarcia"
           }
@@ -201,7 +201,7 @@ function Students() {
           year: "2022-23",
           position: "IIT Patna",
           caption: "Passionate about AI and machine learning.",
-          image: "students/hardik.jpg",
+          image: "images/hardik.jpg",
           social: {
             linkedin: "https://linkedin.com/in/noahgarcia"
           }
@@ -211,7 +211,7 @@ function Students() {
           year: "2022-23",
           position: "IIT Patna",
           caption: "Passionate about AI and machine learning.",
-          image: "students/gaurav.jpg",
+          image: "images/gaurav.jpg",
           social: {
             linkedin: "https://linkedin.com/in/noahgarcia"
           }
@@ -221,7 +221,7 @@ function Students() {
           year: "2022-23",
           position: "IIT Patna",
           caption: "Passionate about AI and machine learning.",
-          image: "students/karthik.jpg",
+          image: "images/karthik.jpg",
           social: {
             linkedin: "https://linkedin.com/in/noahgarcia"
           }
@@ -231,7 +231,7 @@ function Students() {
            year: "2022-23",
           position: "IIT Patna",
           caption: "Passionate about AI and machine learning.",
-          image: "students/abhilash.jpg",
+          image: "images/abhilash.jpg",
           social: {
             linkedin: "https://linkedin.com/in/noahgarcia"
           }
@@ -241,7 +241,7 @@ function Students() {
           year: "2021-22",
           position: "IIT Patna",
           caption: "Passionate about AI and machine learning.",
-          image: "students/kamal.jpg",
+          image: "images/kamal.jpg",
           social: {
             linkedin: "https://linkedin.com/in/noahgarcia"
           }
@@ -251,7 +251,7 @@ function Students() {
           year: "2021-22",
           position: "IIT Patna",
           caption: "Passionate about AI and machine learning.",
-          image: "students/ananya.jpg",
+          image: "images/ananya.jpg",
           social: {
             linkedin: "https://linkedin.com/in/noahgarcia"
           }
@@ -261,7 +261,7 @@ function Students() {
           year: "2020-21",
           position: "IIT Patna",
           caption: "Passionate about AI and machine learning.",
-          image: "students/gopi.jpg",
+          image: "images/gopi.jpg",
           social: {
             linkedin: "https://linkedin.com/in/noahgarcia"
           }
@@ -271,7 +271,7 @@ function Students() {
           year: "2020-21",
           position: "IIT Patna",
           caption: "Coding my way to success, one bug at a time.",
-          image: "students/pawan.jpg",
+          image: "images/pawan.jpg",
           social: {
             linkedin: "https://linkedin.com/in/avarodriguez"
           }

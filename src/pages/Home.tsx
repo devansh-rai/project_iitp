@@ -14,25 +14,25 @@ const appointments = [
     title: 'Assistant Professor',
     institution: 'Indian Institute of Technology Patna',
     year: 'Jun 2019 - Present',
-    logo: '/students/iitp2.png',
+    logo: 'images/iitp1.png',
   },
   {
     title: 'Research Fellow',
     institution: 'Centre of Excellence for Testing & Research of Autonomous Vehicles NTU (CETRAN)',
     year: 'Jul 2018 - May 2019',
-    logo: '/students/NTU1.png',
+    logo: 'images/ntu.jpg',
   },
   {
     title: 'Senior Project Officer',
     institution: 'Indian Institute of Technology Madras',
     year: 'Jul 2017 - Jun 2018',
-    logo: '/students/iitm1.png',
+    logo: 'images/iitm.jpg',
   },
   {
     title: 'Pre-Dcotoral Fellow',
     institution: 'Indian Institute of Technology Madras',
     year: 'Dec 2016 - Jun 2017',
-    logo: '/students/iitm1.png',
+    logo: 'images/iitm.jpg',
   },
 ];
 
@@ -42,13 +42,13 @@ const education = [
     thesis: 'Specilization: Transportation Engineering',
     university: 'Indian Institute of Technology Madras',
     year: 'Jul 2012 - Jul 2017',
-    logo: '/students/iitm1.png',
+    logo: 'images/iitm.jpg',
   },
   {
     degree: 'B.Tech in Civil Engineering',
     university: 'Bharat Institute of Engineering and Technology Hyderabad (affiliated to JNTU Hyderabad)',
     year: 'Sep 2008 - Jun 2012',
-    logo: '/students/biet.png',
+    logo: 'images/biet.png',
   },
 ];
 
@@ -58,7 +58,7 @@ function Home() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left">
           <img
-            src="/students/Anil.jpg"
+            src="images/Anil.jpg"
             alt="Profile of Dr. Anilkumar Bachu"
             className="w-48 h-56 rounded-lg mb-8 md:mb-0 md:mr-8 object-cover"
           />
@@ -69,16 +69,16 @@ function Home() {
             <p className="mt-2 text-xl font-medium text-gray-600">{profile.department1}</p>
             <div className="flex justify-center md:justify-start space-x-4 mt-3">
               <a href="https://scholar.google.com/citations?user=mrw1V7YAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
-                <img src="students/gs.png" alt="Google Scholar" className="w-8 h-8" />
+                <img src="images/gs.png" alt="Google Scholar" className="w-8 h-8" />
               </a>
               <a href="https://www.researchgate.net/profile/Anilkumar-Bachu?ev=hdr_xprf" target="_blank" rel="noopener noreferrer">
-                <img src="students/rg.png" alt="ResearchGate" className="w-8 h-8" />
+                <img src="images/rg.png" alt="ResearchGate" className="w-8 h-8" />
               </a>
               <a href="https://orcid.org/my-orcid?orcid=0000-0001-5933-8362" target="_blank" rel="noopener noreferrer">
-                <img src="students/orcid copy.png" alt="ORCID" className="w-8 h-8" />
+                <img src="images/orcid copy.png" alt="ORCID" className="w-8 h-8" />
               </a>
               <a href="https://www.webofscience.com/wos/author/record/ABF-9870-2021" target="_blank" rel="noopener noreferrer">
-                <img src="students/wos.png" alt="Scopus" className="w-8 h-8" />
+                <img src="images/wos.png" alt="Scopus" className="w-8 h-8" />
               </a>
             </div>
           </div>

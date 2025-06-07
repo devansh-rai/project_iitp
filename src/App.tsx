@@ -63,7 +63,7 @@ function App() {
             <div className="flex justify-between items-center h-16">
               {/* Logo Section */}
               <Link to="/" className="flex items-center space-x-2">
-                <img src="iitp_logo.png" alt="Logo" className="h-10 w-auto" />
+                <img src="images/iitp_logo.png" alt="Logo" className="h-10 w-auto" />
                 {/* <span className="text-xl font-bold text-gray-700 hidden sm:inline">Anilkumar Bachu</span> */}
               </Link>
 
