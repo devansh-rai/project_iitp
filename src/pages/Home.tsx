@@ -14,25 +14,25 @@ const appointments = [
     title: 'Assistant Professor',
     institution: 'Indian Institute of Technology Patna',
     year: 'Jun 2019 - Present',
-    logo: 'students/iitp2.png',
+    logo: '/students/iitp2.png',
   },
   {
     title: 'Research Fellow',
     institution: 'Centre of Excellence for Testing & Research of Autonomous Vehicles NTU (CETRAN)',
     year: 'Jul 2018 - May 2019',
-    logo: 'students/NTU1.png',
+    logo: '/students/NTU1.png',
   },
   {
     title: 'Senior Project Officer',
     institution: 'Indian Institute of Technology Madras',
     year: 'Jul 2017 - Jun 2018',
-    logo: 'students/iitm1.png',
+    logo: '/students/iitm1.png',
   },
   {
     title: 'Pre-Dcotoral Fellow',
     institution: 'Indian Institute of Technology Madras',
     year: 'Dec 2016 - Jun 2017',
-    logo: 'students/iitm1.png',
+    logo: '/students/iitm1.png',
   },
 ];
 
@@ -42,13 +42,13 @@ const education = [
     thesis: 'Specilization: Transportation Engineering',
     university: 'Indian Institute of Technology Madras',
     year: 'Jul 2012 - Jul 2017',
-    logo: 'students/iitm1.png',
+    logo: '/students/iitm1.png',
   },
   {
     degree: 'B.Tech in Civil Engineering',
     university: 'Bharat Institute of Engineering and Technology Hyderabad (affiliated to JNTU Hyderabad)',
     year: 'Sep 2008 - Jun 2012',
-    logo: 'students/biet.png',
+    logo: '/students/biet.png',
   },
 ];
 
@@ -58,7 +58,7 @@ function Home() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left">
           <img
-            src="students/Anil.jpg"
+            src="/students/Anil.jpg"
             alt="Profile of Dr. Anilkumar Bachu"
             className="w-48 h-56 rounded-lg mb-8 md:mb-0 md:mr-8 object-cover"
           />

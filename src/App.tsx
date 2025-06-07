@@ -2,24 +2,24 @@ import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Menu, X, ChevronDown, Facebook, Twitter, Linkedin, Mail } from 'lucide-react';
 
-import Home from './pages/Home';
-import Students from './pages/Students';
-import Research from './pages/Research';
-import Teaching from './pages/Teaching';
-import Publications from './pages/Publications';
-import Contact from './pages/Contact';
-import SynergisticActivities from './pages/SynergisticActivities';
-import Gallery from './pages/Gallery';
+// import Home from './pages/Home';
+// import Students from './pages/Students';
+// import Research from './pages/Research';
+// import Teaching from './pages/Teaching';
+// import Publications from './pages/Publications';
+// import Contact from './pages/Contact';
+// import SynergisticActivities from './pages/SynergisticActivities';
+// import Gallery from './pages/Gallery';
 
-// // Lazy-loaded components for better performance
-// const Home = lazy(() => import('./pages/Home'));
-// const Students = lazy(() => import('./pages/Students'));
-// const Research = lazy(() => import('./pages/Research'));
-// const Teaching = lazy(() => import('./pages/Teaching'));
-// const Publications = lazy(() => import('./pages/Publications'));
-// const Contact = lazy(() => import('./pages/Contact'));
-// const SynergisticActivities = lazy(() => import('./pages/SynergisticActivities'));
-// const Gallery = lazy(() => import('./pages/Gallery'));
+// Lazy-loaded components for better performance
+const Home = lazy(() => import('./pages/Home'));
+const Students = lazy(() => import('./pages/Students'));
+const Research = lazy(() => import('./pages/Research'));
+const Teaching = lazy(() => import('./pages/Teaching'));
+const Publications = lazy(() => import('./pages/Publications'));
+const Contact = lazy(() => import('./pages/Contact'));
+const SynergisticActivities = lazy(() => import('./pages/SynergisticActivities'));
+const Gallery = lazy(() => import('./pages/Gallery'));
 
 function App() {
   const [menuState, setMenuState] = useState({ isMenuOpen: false, isMoreOpen: false });
@@ -58,129 +58,101 @@ function App() {
         {/* Navigation */}
         <nav className="bg-white shadow-lg fixed w-full z-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-end h-16 items-center space-x-3">
-              {/* Desktop Navigation */}
-              {/* <div className="hidden md:flex md:items-center space-x-3">
-                {mainNavigation.map((item) => (
-                  <Link
-                    key={item.name}
-                    to={item.href}
-                    onClick={handleLinkClick}
-                    className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-lg font-medium"
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-                <div className="relative more-dropdown">
-                  <button
-                    onClick={() => setMenuState((prev) => ({ ...prev, isMoreOpen: !prev.isMoreOpen }))}
-                    className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-lg font-medium flex items-center"
-                    aria-expanded={menuState.isMoreOpen}
-                    aria-label="Toggle more menu"
-                  >
-                    More <ChevronDown className="ml-2 h-5 w-5" />
-                  </button>
-                  {menuState.isMoreOpen && (
-                    <div className="absolute mt-2 bg-white shadow-lg rounded-md w-48 py-2">
-                      {moreNavigation.map((item) => (
-                        <Link
-                          key={item.name}
-                          to={item.href}
-                          onClick={handleLinkClick}
-                          className="block px-4 py-2 text-gray-600 hover:text-indigo-600 hover:bg-gray-100"
-                        >
-                          {item.name}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              </div> */}
+            {/* <div className="flex justify-end h-16 items-center space-x-3"> */}
 
-              {/* Desktop Navigation */}
-              <div className="hidden md:flex md:items-center space-x-3">
-                {mainNavigation.map((item) => (
-                  <Link
-                    key={item.name}
-                    to={item.href}
-                    onClick={handleLinkClick}
-                    className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-lg font-medium"
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-                <div className="relative more-dropdown">
-                  <button
-                    onClick={() => setMenuState((prev) => ({ ...prev, isMoreOpen: !prev.isMoreOpen }))}
-                    className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-lg font-medium flex items-center"
-                    aria-expanded={menuState.isMoreOpen}
-                    aria-label="Toggle more menu"
-                  >
-                    More <ChevronDown className="ml-2 h-5 w-5" />
-                  </button>
-                  {menuState.isMoreOpen && (
-                    <div className="absolute mt-2 bg-white shadow-lg rounded-md w-48 py-2">
-                      {moreNavigation.map((item) => (
-                        <Link
-                          key={item.name}
-                          to={item.href}
-                          onClick={handleLinkClick}
-                          className="block px-4 py-2 text-gray-600 hover:text-indigo-600 hover:bg-gray-100"
-                        >
-                          {item.name}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              </div>
+            <div className="flex justify-between items-center h-16">
+              {/* Logo Section */}
+              <Link to="/" className="flex items-center space-x-2">
+                <img src="iitp_logo.png" alt="Logo" className="h-10 w-auto" />
+                {/* <span className="text-xl font-bold text-gray-700 hidden sm:inline">Anilkumar Bachu</span> */}
+              </Link>
 
-              {/* Mobile Menu Toggle */}
-              <div className="md:hidden flex items-center">
-                <button
-                  onClick={() => setMenuState((prev) => ({ ...prev, isMenuOpen: !prev.isMenuOpen }))}
-                  className="text-gray-600 hover:text-indigo-600 focus:outline-none"
-                  aria-label="Toggle menu"
-                >
-                  {menuState.isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-                </button>
-              </div>
+              <div className="flex items-center space-x-3">
 
-              {/* Mobile Menu */}
-              {menuState.isMenuOpen && (
-                <div className="md:hidden absolute top-16 left-0 w-full bg-white shadow-lg px-4 py-4 space-y-2 z-20">
+                {/* Desktop Navigation */}
+                <div className="hidden md:flex md:items-center space-x-3">
                   {mainNavigation.map((item) => (
                     <Link
                       key={item.name}
                       to={item.href}
                       onClick={handleLinkClick}
-                      className="block text-gray-600 hover:text-indigo-600 text-lg font-medium"
+                      className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-lg font-medium"
                     >
                       {item.name}
                     </Link>
                   ))}
-                  <hr className="border-gray-200" />
-                  {moreNavigation.map((item) => (
-                    <Link
-                      key={item.name}
-                      to={item.href}
-                      onClick={handleLinkClick}
-                      className="block text-gray-600 hover:text-indigo-600 text-lg font-medium"
+                  <div className="relative more-dropdown">
+                    <button
+                      onClick={() => setMenuState((prev) => ({ ...prev, isMoreOpen: !prev.isMoreOpen }))}
+                      className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-lg font-medium flex items-center"
+                      aria-expanded={menuState.isMoreOpen}
+                      aria-label="Toggle more menu"
                     >
-                      {item.name}
-                    </Link>
-                  ))}
+                      More <ChevronDown className="ml-2 h-5 w-5" />
+                    </button>
+                    {menuState.isMoreOpen && (
+                      <div className="absolute mt-2 bg-white shadow-lg rounded-md w-48 py-2">
+                        {moreNavigation.map((item) => (
+                          <Link
+                            key={item.name}
+                            to={item.href}
+                            onClick={handleLinkClick}
+                            className="block px-4 py-2 text-gray-600 hover:text-indigo-600 hover:bg-gray-100"
+                          >
+                            {item.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 </div>
-              )}
 
+                {/* Mobile Menu Toggle */}
+                <div className="md:hidden flex items-center">
+                  <button
+                    onClick={() => setMenuState((prev) => ({ ...prev, isMenuOpen: !prev.isMenuOpen }))}
+                    className="text-gray-600 hover:text-indigo-600 focus:outline-none"
+                    aria-label="Toggle menu"
+                  >
+                    {menuState.isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                  </button>
+                </div>
 
+                {/* Mobile Menu */}
+                {menuState.isMenuOpen && (
+                  <div className="md:hidden absolute top-16 left-0 w-full bg-white shadow-lg px-4 py-4 space-y-2 z-20">
+                    {mainNavigation.map((item) => (
+                      <Link
+                        key={item.name}
+                        to={item.href}
+                        onClick={handleLinkClick}
+                        className="block text-gray-600 hover:text-indigo-600 text-lg font-medium"
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+                    <hr className="border-gray-200" />
+                    {moreNavigation.map((item) => (
+                      <Link
+                        key={item.name}
+                        to={item.href}
+                        onClick={handleLinkClick}
+                        className="block text-gray-600 hover:text-indigo-600 text-lg font-medium"
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+
+              </div>    
             </div>
           </div>
         </nav>
 
         {/* Main Content */}
         <div className="pt-16 flex-grow">
-          {/* <Suspense fallback={<div className="text-center py-10">Loading...</div>}> */}
+          <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/students" element={<Students />} />
@@ -191,7 +163,7 @@ function App() {
               <Route path="/synergistic-activities" element={<SynergisticActivities />} />
               <Route path="/gallery" element={<Gallery />} />
             </Routes>
-          {/* </Suspense> */}
+          </Suspense>
         </div>
 
         {/* Redesigned Footer */}
