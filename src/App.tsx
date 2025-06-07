@@ -1,6 +1,7 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Menu, X, ChevronDown, Facebook, Twitter, Linkedin, Mail } from 'lucide-react';
+
 
 // Lazy-loaded components for better performance
 const Home = lazy(() => import('./pages/Home'));
